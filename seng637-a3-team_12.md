@@ -10,9 +10,6 @@
 | Jack Shenfield   |
 | Barrett Sapunjis |
 
-(Note that some labs require individual reports while others require one report
-for each group. Please see each lab document for details.)
-
 # 1 Introduction
 The focus of this lab is to become familiar with and apply white-box testing methods and code coverage analysis using the JUnit testing framework in Eclipse and coverage analysis tools. Unlike the previous lab which emphasized black-box testing based on input domains and expected outputs, this lab evaluates the efficacy of the testing suite by how much of the code (coverage) is exercised during testing as well as how data flow testing may be accomplished through manual means. Now with the source code available, aspects of control-flow coverage, namely statement, branch, and condition coverage, are used to further provide testing insight on the system under test (SUT) in addition to the previous lab's black-box testing.
 
@@ -287,7 +284,7 @@ For manual DU pair testing, the method `DataUtilities.calculateColumnTotal()` wa
 
 Analysis of data flow via these D-U pairs helped us understand how variables propagate through a function better enhancing our test development and code design knowledge. Overall, it helped our team realize the need to test all possible flows and statements within a given set of code. It is amazing how some applications with millions of lines of code work so well due to proper engineering and testing.  
 
-Another major challenge encountered was the limitation of the tools in producing quantitative condition coverage results. Of the provided coverage tools, only two had a history of showing condition coverage, however both being outdated for such applications meant this result could not be obtained as desired and a substitute, as discussed in section 5, had to be used. This showed how important such tools are in general in understanding the limits of testing design as without them, certain elements that may lead to problematic bugs, may continue to exist.
+Another major challenge encountered was the limitation of the tools in producing quantitative condition coverage results. Of the provided coverage tools, only two (CodeCover and Clover) had a history of showing condition coverage, however both being outdated for such applications meant this result could not be obtained as easily and research into the updated version of Clover, openClover, was done to use it instead to obtain condition coverage. This showed how important such tools are in general in understanding the limits of testing design as without them, certain elements that may lead to problematic bugs, may continue to exist.
 
 # 10 Comments/feedback on the lab itself
 
